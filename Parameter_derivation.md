@@ -1,5 +1,7 @@
 # Derivation of Parameters
 
+The final system is as shown below.
+
 ![](https://courses.edx.org/assets/courseware/v1/6cdb6fb89f30026f9e3157be354c34a4/asset-v1:MITx+6.302.1x+2T2016+type@asset+block/on_scale.jpg)
 
 We approximated the moment of inertia of the propeller Jm as that of a flat rod rotating around its center. This moment is expressed using this equation:
