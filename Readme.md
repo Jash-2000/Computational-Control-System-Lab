@@ -4,7 +4,7 @@ The repository contains my __assignment solutions__ and __term project__ of the 
 
 ## The term project details are as follows 
 
-
+The Term project deals with developement of an **propeller controlled arm design using a microcontroller**.
 
 
 ---
@@ -47,4 +47,14 @@ The repository contains my __assignment solutions__ and __term project__ of the 
     sys = tf(c,r);
   ```
 
-  ## P.S - The write Ups and the codes for some of these group assignments are present with [Akshit Patel](https://github.com/Akshit-Patel/Control-System-Projects).
+---
+
+## Resources
+
+**__P.S__ - The write Ups and the codes for some of these group assignments are present with [Akshit Patel](https://github.com/Akshit-Patel/Control-System-Projects).**
+
+  * [https://www.youtube.com/watch?v=iOmqgewj5XI&feature=emb_title](https://www.youtube.com/watch?v=iOmqgewj5XI&feature=emb_title)
+  * [Understanding Basics of Fuzzy System](https://www.youtube.com/watch?v=OVINlUaEiS8&list=PLk8_UfafEClpL0r1YaYHz-F1AbGJDQizL)
+  * [Root Locus](https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlRootLocus)
+  * [Inverted Pendulum](http://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=SystemModeling)
+  * [Term Project](https://learning.edx.org/course/course-v1:MITx+6.302.1x+2T2016/home)
