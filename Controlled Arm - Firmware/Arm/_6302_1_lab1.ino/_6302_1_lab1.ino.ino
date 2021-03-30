@@ -12,7 +12,7 @@ float K1, K2, K3, Ku, directV, desiredV;
 
 // Teensy definitions
 #define angleSensorPin  A9
-#define pwmVoltagePin A0
+#define pwmVoltagePin A0c
 #define motorVoltagePin  A1
 #define motorOutPWM  4
 #define monitorPin 2  
@@ -56,7 +56,7 @@ char buf[60];  //
 // Variables for loop control
 uint32_t loop_counter;
 int numSkip;  // Number of loops to skip between host updates.
-float elapsedMicros = loopTime; // Create elapsed time variable to ensure regular loops.
+elapsedMicros loopTime; // Create elapsed time variable to ensure regular loops.
 unsigned int headroom;  // Headroom is time left before loop takes too long.
 boolean switchFlag;
 
@@ -71,7 +71,7 @@ void setup() {
   analogReadResolution(adcRes);
   pinMode(motorVoltagePin, INPUT);
   pinMode(pwmVoltagePin, INPUT);
-    pinMode(angleSensorPin, INPUT);
+  pinMode(angleSensorPin, INPUT);
 
   // Set up output
   analogWriteResolution(dacRes);
@@ -121,7 +121,8 @@ void loop() {  // Main code, runs repeatedly
   float errorV = (desiredV - angleV);
   float angleVderv = (angleV - pastAngleV[past_size-1])*scaleD;
 
-  float req = (kp*errorV + kd*angleVderv + directV)
+  // calculating the motor command signal here:
+  req = kp*errorV + kd*andleVderv + directV;
   float motorCmd = req;
 
 

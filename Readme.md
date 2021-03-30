@@ -1,10 +1,48 @@
 # Computational Control System Lab
 
-The repository contains my __assignment solutions__ and __term project__ of the Control Systems course and Computational Control System Lab course and BITS Pilani. 
+The repository contains my __assignment solutions__ and __term project__ of the [Control Systems](https://www.bits-pilani.ac.in/hyderabad/EEE/ControlSystemsLab) course and [Computational Control System Lab](https://www.bits-pilani.ac.in/hyderabad/EEE/ControlSystemsLab) course and BITS Pilani. 
 
 ## The term project details are as follows 
 
-The Term project deals with developement of an **propeller controlled arm design using a microcontroller**.
+The Term project deals with developement of an **propeller controlled arm design using a microcontroller**. 
+The final model developed can be seen in the following image :
+
+![Final Picture](https://courses.edx.org/assets/courseware/v1/6cdb6fb89f30026f9e3157be354c34a4/asset-v1:MITx+6.302.1x+2T2016+type@asset+block/on_scale.jpg)
+
+
+### The hardware schematic for the same is shown below : 
+
+![Schematic](https://github.com/Jash-2000/Computational-Control-System-Lab/blob/master/schematic.png)
+
+Here, we are using [Teensy 3.2](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_RRz-ZLV89quRsmHHOWXmTu9NQJqWvVU_gQ&usqp=CAU) along with Arduino Uno board for controlling the propellers. 
+
+
+### The Soltware component is divided into following 3 parts 
+
+  *Microcontroller Code: This is the code uploaded to the Arduino (the .ino file). It sets the Arduino up for listening to and controlling the electronics as well as taking in parameters and reporting values to your computer over serial (the USB cable). It is written in Arduino's C/C++ type language.
+
+  *Server Code: This is a Python script that talks with the Arduino over serial, does some calculations, and then talks with the GUI code in your browser. It is the "middle-person" of our software stack.
+
+  *GUI Code: Your GUI (Graphical User Interface) is basically just a web-page that is hosted on your machine. It is written in standard html/css/javascript. Don't worry, it is locally hosted and only you have access to it! It lives at localhost:3000 in your browser url field when the server script is running.
+
+The controller GUI would look like this 
+![GUI](https://github.com/Jash-2000/Computational-Control-System-Lab/blob/master/gui.png) 
+
+I have also attempted to build a flask server for developing a GUI version for the outputs of Arduino (for testing purpose). There are many bugs with the GUI currently, and I am open to any pull requests. The requirements for the project are present in req.txt file. 
+
+### The Control Model of the System
+The controller of the system is designed using a simple PD controller with an steady state offset. 
+
+```C++
+    // calculating the motor command signal here:
+  req = kp*errorV + kd*andleVderv + directV;
+  float motorCmd = req;
+
+```
+
+Individual folders contains readme files for improved explianations. Also the file **[parameter_derivation.md](https://github.com/Jash-2000/Computational-Control-System-Lab/blob/master/Parameter_derivation.md)** contains the model derivation. 
+
+![Final Results](https://courses.edx.org/assets/courseware/v1/5c9b579190597487510b5838ccf817a3/asset-v1:MITx+6.302.1x+2T2016+type@asset+block/example_set_of_nat_freq.png)
 
 
 ---
