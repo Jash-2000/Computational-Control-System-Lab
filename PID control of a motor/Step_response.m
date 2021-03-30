@@ -1,3 +1,10 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Author : Jash Shah
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 Ra = 0.45;                 %Per phase stator resistance
 La = 0.035;              %Per phase stator inductance
 B = 2e-4;              %Damping coefficient
