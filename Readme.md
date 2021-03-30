@@ -18,7 +18,13 @@ The repository contains my __assignment solutions__ and __term project__ of the 
 
   2. **Development of customized PD Controller** - Designing an Cascaded PD controller, with the **desired settling time and peak overshoot** is a very important task in any design algorithm. The hand written solution is present [here](https://github.com/Jash-2000/Computational-Control-System-Lab/blob/master/2018A8PS0507P.pdf).
 
-  3.  **Bode Plotting and Block Reduction Technique** - Experimeted with various functions of MATLAB to develop bode plots and examine the system dynamics. A complex block diagram was also reduced to a simple transfer function. 
+  3.  **Using Root Locus to control a 2nd Order closed loop P-only controller** - This involved the use of above 2 techniques to develop a customized controller. You can see the code present in the [folder](https://github.com/Jash-2000/Computational-Control-System-Lab/tree/master/Tuning%20of%20P%20controller%20of%202nd%20Order%20system%20using%20Root%20Locus) .The result obtained is as follows 
+
+  ### Root Locus based P-only controller
+![Step Response](https://github.com/Jash-2000/Computational-Control-System-Lab/blob/master/Capture.JPG)
+
+  
+  5. **Bode Plotting and Block Reduction Technique** - Experimeted with various functions of MATLAB to develop bode plots and examine the system dynamics. A complex block diagram was also reduced to a simple transfer function. 
 
   ### Complex Block Diagram 
 

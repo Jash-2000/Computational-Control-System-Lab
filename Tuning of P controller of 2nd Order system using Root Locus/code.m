@@ -1,5 +1,9 @@
-% 2018A8PS0094P
-% Akshit Patel
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Author : Jash Shah
+% Place : BITS Pilani Lab, India
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 s = tf('s');
 % lets take a following system
